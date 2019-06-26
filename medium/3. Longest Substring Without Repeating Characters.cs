@@ -7,7 +7,6 @@ public class Solution {
             for(int j=i+1;j<s.Length;j++)
             {
                 string compareStr=s.Substring(i,j-i);
-                
                 string compareChar=s[j].ToString();
                 //Console.WriteLine(compareStr+"->"+compareChar);
                 if(compareStr.Contains(compareChar))
@@ -20,11 +19,7 @@ public class Solution {
                 }
             }  
             if(!hasRepeat && maxLength<s.Length-i)
-            {
-                maxLength=s.Length-i;
-                //Console.WriteLine(s.Length+"->"+i);
-            }
-                
+                return s.Length-i;
         }
         return maxLength==0? s.Length : maxLength;
     }
