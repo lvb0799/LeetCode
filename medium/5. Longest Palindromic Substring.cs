@@ -40,8 +40,6 @@
     }
     private int[] findPalindrome(string s, int left, int right)
     {
-        if (left == 1 && right == 1)
-            Console.WriteLine();
         int[] result = new int[2];
         result[0] = left;
         result[1] = right;
